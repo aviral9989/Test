@@ -68,7 +68,7 @@ const userCollection = db.collection("users");
 io.on('connection',function(){
   console.log("Socket working");
 })
-db.once("open",function(){
+/*db.once("open",function(){
   console.log("Db is connected");
   const likeChangeStream = userCollection.watch(); 
  
